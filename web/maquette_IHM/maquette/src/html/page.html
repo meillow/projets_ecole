@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Maquette</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css" />
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    <script type="text/javascript" src="../js/script.js"></script>
+  </head>
+  <body class="w3-center">
+    <div class="w3-container w3-brown">
+      <div id="menu" class="w3-padding-top">
+       <a href="javascript:void(0)" class="w3-bar-item" onclick="fermer_menu()">&times;</a>
+       <a href="#" class="w3-bar-item">Mes devis</a>
+       <a href="#" class="w3-bar-item">Créer un devis</a>
+       <!-- <a href="#" class="w3-bar-item">link</a> -->
+     </div>
+
+     <div class="w3-left w3-margin-top">
+       <span onclick="ouvrir_menu()">&#9776;</span>
+     </div>
+
+      <h3>Création de devis</h3>
+    </div>
+
+    <div id="main">
+      <h4 class="w3-border-top w3-margin-bottom">Listage</h4>
+
+      <form class="w3-container" action="index.html" medivod="post">
+        <input type="text" name="" value="" placeholder="Nom de la pièce" /><br /><br />
+
+        <div class="w3-row-padding">
+          <div class="w3-col s6 m6 l6 w3-margin-bottom">
+            <h5>Types de carton</h5>
+          </div>
+          <div class="w3-col s6 m6 l6 w3-margin-bottom">
+            <h5>Quantité</h5>
+          </div>
+
+          <div class="w3-col m6 l6">
+            <p>Petit</p>
+          </div>
+          <div class="w3-col m2 l2">
+            <input type="button" name="" value="+" />
+            <input type="button" name="" value="-" />
+          </div>
+          <div class="w3-col m4 l4">
+            <input class="w3-input w3-border" type="number" name="" value="0" min="0" />
+          </div>
+          <div class="w3-col m12 l12 w3-margin">
+            <a href="#">+ Détailler les cartons</a>
+          </div>
+
+          <div class="w3-col m6 l6">
+            <p>Moyen</p>
+          </div>
+          <div class="w3-col m2 l2">
+            <input type="button" name="" value="+" />
+            <input type="button" name="" value="-" />
+          </div>
+          <div class="w3-col m4 l4">
+            <input class="w3-input w3-border" type="number" name="" value="0" min="0" />
+          </div>
+          <div class="w3-col m12 l12 w3-margin">
+            <a href="#">+ Détailler les cartons</a>
+          </div>
+
+          <div class="w3-col m6 l6">
+            <p>Barrel</p>
+          </div>
+          <div class="w3-col m2 l2">
+            <input type="button" name="" value="+" />
+            <input type="button" name="" value="-" />
+          </div>
+          <div class="w3-col m4 l4 quantite">
+            <input class="w3-input w3-border" type="number" name="" value="0" min="0" />
+          </div>
+          <div class="w3-col m12 l12 w3-margin">
+            <a href="#">+ Détailler les cartons</a>
+          </div>
+
+          <div class="w3-col m6 l6">
+            <p>Penderie</p>
+          </div>
+          <div class="w3-col m2 l2">
+            <input type="button" name="" value="+" />
+            <input type="button" name="" value="-" />
+          </div>
+          <div class="w3-col m4 l4">
+            <input class="w3-input w3-border" type="number" name="" value="0" min="0" />
+          </div>
+          <div class="w3-col m12 l12 w3-margin">
+            <a href="#">+ Détailler les cartons</a>
+          </div>
+
+          <div class="w3-col m6 l6">
+            <p>Pour tableau</p>
+          </div>
+          <div class="w3-col m2 l2">
+            <input type="button" name="" value="+" />
+            <input type="button" name="" value="-" />
+          </div>
+          <div class="w3-col m4 l4">
+            <input class="w3-input w3-border" type="number" name="" value="0" min="0" />
+          </div>
+          <div class="w3-col m12 l12 w3-margin">
+            <a href="#">+ Détailler les cartons</a>
+          </div>
+        </div>
+
+        <div class="w3-panel">
+          <a class="w3-button w3-brown" href="detection_carton.html">Ajouter un carton avec une photo</a>
+        </div>
+
+        <input class="w3-button w3-brown" type="submit" name="" value="Passer à la pièce suivante" />
+      </form>
+    </div>
+
+  </body>
+</html>

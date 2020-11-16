@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Maquette</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-highway.css" />
+    <link rel="stylesheet" type="text/css" href="../../../css/style.css" />
+    <script type="text/javascript" src="../../../js/script.js"></script>
+  </head>
+
+  <body>
+    <div id="menu" class="w3-sidebar w3-bar-block w3-collapse w3-card w3-animate-left">
+      <button class="w3-bar-item w3-button w3-hide-large" onclick="fermer_menu()">Fermer &times;</button>
+      <a href="#" class="w3-bar-item w3-button">Mes devis</a>
+      <a href="#" class="w3-bar-item w3-button">Créer un devis</a>
+    </div>
+
+    <div class="w3-main">
+      <div class="w3-display-container w3-highway-red">
+        <div class="w3-display-left">
+          <button class="w3-button w3-highway-red w3-hide-large" onclick="ouvrir_menu()">&#9776;</button>
+        </div>
+        <div class="w3-display-middle">
+          <h1>Créer un devis</h1>
+        </div>
+      </div>
+
+      <h2 class="w3-topbar w3-margin-bottom w3-center">Liste des cartons</h2>
+
+      <div class="w3-container">
+        <div class="w3-margin-bottom w3-center">
+          <input class="" type="text" name="" value="Salon" placeholder="Nom de la pièce" />
+        </div>
+
+        <div class="w3-row-padding">
+          <div class="w3-center">
+            <div class="w3-col s6 m6 l6 w3-margin-bottom">
+              <h3>Types de carton</h3>
+            </div>
+            <div class="w3-col s6 m6 l6 w3-margin-bottom">
+              <h3>Quantité</h3>
+            </div>
+          </div>
+
+          <div class="w3-col w3-margin-bottom">
+            <div class="w3-col m6 l6">
+              <h4 class="w3-margin-left"><a href="#">Petit</a></h4>
+            </div>
+            <div class="w3-col m1 l1">
+              <input class="w3-button w3-round w3-right w3-highway-red" type="button" name="" value="-" />
+            </div>
+            <div class="w3-col m4 l4">
+              <input class="w3-input w3-border" type="number" name="" value="4" min="0" placeholder="0" />
+            </div>
+            <div class="w3-col m1 l1">
+              <input class="w3-button w3-round w3-highway-red" type="button" name="" value="+" />
+            </div>
+          </div>
+
+          <div class="w3-col w3-margin-bottom">
+            <div class="w3-col m6 l6">
+              <h4 class="w3-margin-left"><a href="#">Moyen</a></h4>
+            </div>
+            <div class="w3-col m1 l1">
+              <input class="w3-button w3-round w3-right w3-highway-red" type="button" name="" value="-" />
+            </div>
+            <div class="w3-col m4 l4">
+              <input class="w3-input w3-border" type="number" name="" value="3" min="0" placeholder="0" />
+            </div>
+            <div class="w3-col m1 l1">
+              <input class="w3-button w3-round w3-highway-red" type="button" name="" value="+" />
+            </div>
+          </div>
+
+          <div class="w3-col w3-margin-bottom">
+            <div class="w3-col m6 l6">
+              <h4 class="w3-margin-left"><a href="#">Barrel</a></h4>
+            </div>
+            <div class="w3-col m1 l1">
+              <input class="w3-button w3-round w3-right w3-highway-red" type="button" name="" value="-" />
+            </div>
+            <div class="w3-col m4 l4">
+              <input class="w3-input w3-border" type="number" name="" value="" min="0" placeholder="0" />
+            </div>
+            <div class="w3-col m1 l1">
+              <input class="w3-button w3-round w3-highway-red" type="button" name="" value="+" />
+            </div>
+          </div>
+
+          <div class="w3-col w3-margin-bottom">
+            <div class="w3-col m6 l6">
+              <h4 class="w3-margin-left"><a href="#">Penderie</a></h4>
+            </div>
+            <div class="w3-col m1 l1">
+              <input class="w3-button w3-round w3-right w3-highway-red" type="button" name="" value="-" />
+            </div>
+            <div class="w3-col m4 l4">
+              <input class="w3-input w3-border" type="number" name="" value="1" min="0" placeholder="0" />
+            </div>
+            <div class="w3-col m1 l1">
+              <input class="w3-button w3-round w3-highway-red" type="button" name="" value="+" />
+            </div>
+          </div>
+
+          <div class="w3-col w3-margin-bottom">
+            <div class="w3-col m6 l6">
+              <h4 class="w3-margin-left"><a href="#">Pour tableau</a></h4>
+            </div>
+            <div class="w3-col m1 l1">
+              <input class="w3-button w3-round w3-right w3-highway-red" type="button" name="" value="-" />
+            </div>
+            <div class="w3-col m4 l4">
+              <input class="w3-input w3-border" type="number" name="" value="" min="0" placeholder="0" />
+            </div>
+            <div class="w3-col m1 l1">
+              <input class="w3-button w3-round w3-highway-red" type="button" name="" value="+" />
+            </div>
+          </div>
+        </div>
+
+        <div class="w3-container w3-margin-top w3-center">
+          <div class="w3-panel w3-margin-bottom">
+            <a class="w3-button w3-round-large w3-highway-red bouton" href="#">Ajouter un carton avec une photo</a>
+          </div>
+
+          <div class="w3-panel w3-margin-bottom">
+            <a class="w3-button w3-round-large w3-highway-red bouton" href="#">Passer à la pièce suivante</a>
+          </div>
+
+          <div class="w3-panel w3-margin-bottom">
+            <a class="w3-button w3-round-large w3-highway-red bouton" href="../recapitulatif.html">Terminer la saisie</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

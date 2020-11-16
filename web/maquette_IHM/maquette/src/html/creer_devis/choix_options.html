@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ldiv">
+  <head>
+    <meta charset="utf-8" />
+    <title>Maquette</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-highway.css">
+    <link rel="stylesheet" type="text/css" href="../../css/style.css" />
+    <script type="text/javascript" src="../../js/script.js"></script>
+  </head>
+
+  <body>
+    <div id="menu" class="w3-sidebar w3-bar-block w3-collapse w3-card w3-animate-left">
+      <button class="w3-bar-item w3-button w3-hide-large" onclick="fermer_menu()">Fermer &times;</button>
+      <a href="#" class="w3-bar-item w3-button">Mes devis</a>
+      <a href="#" class="w3-bar-item w3-button">Créer un devis</a>
+    </div>
+
+    <div class="w3-main w3-center">
+      <div id=bandeau>
+        <div class="w3-highway-red">
+          <button class="w3-button w3-highway-red w3-display-topleft w3-xxxlarge" onclick="ouvrir_menu()">&#9776;</button>
+
+          <div class="w3-container">
+            <h1>Créer un devis</h1>
+          </div>
+        </div>
+
+        <h2 class="w3-panel w3-topbar w3-border-grey w3-margin-bottom">Choix des options</h2>
+      </div>
+
+      <form class="w3-container" action="devis.html" medivod="post">
+
+
+        <div class="w3-row-padding">
+            <div class="titre" >
+                <h5 class="w3-xxxlarge"><b>Services prenium</b></h5></br>
+            </div>
+            <div class="choix-options  w3-left-align w3-margin-left w3-padding-top w3-panel w3-bottombar w3-border-grey ">
+                <ul class="w3-ul ">
+                    <li class="w3-border w3-border-white"> <input class="check w3-check " type="checkbox" id="Démontable" name="Démontable">
+                        <label class="w3-padding-right w3-padding-left " for="Démontable">plan de destination et disposition des meubles</u></label></li>
+                    <li class="w3-border w3-border-white"> <input class="check w3-check" type="checkbox" id="Démontable" name="Démontable">
+                        <label class="w3-padding-right w3-padding-left" for="Démontable">démontage et remontage des meubles</label></li>
+                    <li class="w3-border w3-border-white"> <input class="check w3-check" type="checkbox" id="Démontable" name="Démontable">
+                        <label class="w3-padding-right w3-padding-left" for="Démontable">mise en carton</label></li>
+                    <li class="w3-border w3-border-white"> <input class="check w3-check" type="checkbox" id="Démontable" name="Démontable">
+                        <label class="w3-padding-right w3-padding-left" for="Démontable">nettoyage logement de départ, extinction et relevé des compteurs</label></li>
+                    <li class="w3-border w3-border-white"> <input class="check w3-check" type="checkbox" id="Démontable" name="Démontable">
+                        <label class="w3-padding-right w3-padding-left" for="Démontable"> réalisation état des lieux de sortie</label></li>
+                    <li class="w3-border w3-border-white"> <input class="check w3-check" type="checkbox" id="Démontable" name="Démontable">
+                        <label class="w3-padding-right w3-padding-left" for="Démontable"> réalisation état des lieux d'entrée</label></li>
+                </ul>
+             </div>
+        </div>
+        <div class="eco w3-row-padding">
+            <div class="titre" >
+                <h5 class="w3-xxxlarge"><b>Services éco</b></h5></br>
+            </div>
+            <div class="choix-options  w3-left-align w3-margin-left w3-padding-top w3-padding-bottom w3-panel w3-bottombar w3-border-grey ">
+                <ul class="w3-ul ">
+                    <li class="w3-border w3-border-white"> <input class="check w3-check " type="checkbox" id="Démontable" name="Démontable">
+                        <label class="w3-padding-right w3-padding-left " for="Démontable">dates flexibles</u></label></li>
+                    <li class="w3-border w3-border-white"> <input class="check w3-check" type="checkbox" id="Démontable" name="Démontable">
+                        <label class="w3-padding-right w3-padding-left" for="Démontable">procéder par groupage</label></li>
+                    <li class="w3-border w3-border-white"> <input class="check w3-check" type="checkbox" id="Démontable" name="Démontable">
+                        <label class="w3-padding-right w3-padding-left" for="Démontable">le client démonte certains meubles</label></li>
+                </ul>
+             </div>
+        </div>
+        </br>
+        <input id= "button-principal" class="w3-button w3-highway-red" type="submit" name="" value="Valider" />
+
+      </form>
+
+    </div>
+  </body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ldiv">
+  <head>
+    <meta charset="utf-8" />
+    <title>Maquette</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body class="w3-center">
+    <div class="w3-container w3-brown">
+          <!-- Sidebar -->
+      <div class="w3-sidebar w3-bar-block" style="display:none" id="mySidebar">
+        <button onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-brown">Close &times;</button>
+        <a href="#" class="w3-bar-item w3-button w3-brown">Link 1</a>
+        <a href="#" class="w3-bar-item w3-button w3-brown">Link 2</a>
+        <a href="#" class="w3-bar-item w3-button w3-brown">Link 3</a>
+      </div>
+
+      <div class="w3-left w3-margin-top menu">
+        <button onclick="w3_open()">☰</button>
+      </div>
+
+      <h3>Création de devis</h3>
+    </div>
+
+    <h4 class="w3-border-top w3-margin-bottom">Détail des cartons</h4>
+
+    <form class="w3-container" action="index.html" medivod="post">
+
+
+      <div class="w3-row-padding">
+        <div class=w3-margin-bottom">
+          <h5>Petit(s) carton(s)</h5></br>
+          <p> Carton 1 </p>
+        </div>
+        <div class="w3-margin-bottom">
+          <TEXTAREA class="Description" type="text" name="" value="" placeholder="Description"></TEXTAREA>
+        </div>
+        <div class="w3-row s4 m4 l4 w3-margin-left">
+
+            <input type="checkbox" id="Démontable" name="Démontable">
+            <label for="Démontable">Démontable</label>
+
+            <TEXTAREA class="Description" type="text" name="" value="" placeholder="Description du montage" disabled></TEXTAREA>
+         </div>
+       </div>
+        </br>
+        <input class="w3-button w3-brown" type="submit" name="" value="Valider" />
+
+    </form>
+    <script>
+    function w3_open() {
+      document.getElementById("mySidebar").style.width = "100%";
+      document.getElementById("mySidebar").style.display = "block";
+    }
+
+    function w3_close() {
+      document.getElementById("mySidebar").style.display = "none";
+    }
+</script>
+  </body>
+</html>

@@ -1,0 +1,122 @@
+html, body
+{
+    font-family: Verdana,sans-serif;
+    line-height: 1.5;
+}
+
+h1
+{
+  font-size: 130%;
+}
+
+h2
+{
+  font-size: 130%;
+}
+
+h3
+{
+  font-size: 120%;
+  text-decoration: underline;
+}
+h4
+{
+  font-size: 110%;
+}
+h5
+{
+  padding-top: 9%;
+}
+
+a
+{
+  text-decoration: none;
+}
+
+#menu
+{
+  width: 300px;
+  font-size: 250%;
+  line-height: 2;
+}
+
+#button-principal
+{
+  margin-top: 3%;
+  margin: 5%;
+}
+
+.w3-main
+{
+  /* Ce margin doit être égal à la largeur du menu. */
+  margin-left: 300px;
+  font-size: 250%;
+}
+
+.w3-display-container
+{
+  height: 100px;
+}
+
+.w3-card
+{
+  line-height: 80%;
+}
+
+.bouton
+{
+  width: 700px;
+}
+
+.description
+{
+  margin-bottom: 7%;
+  padding: 5%;
+}
+
+.description-carton
+{
+  padding-bottom:10%;
+}
+
+.choix-options
+{
+  font-size: 90%;
+}
+
+.choix-options li
+{
+  margin-bottom: 4%;
+}
+
+.eco
+{
+  padding-top: -101%;
+}
+
+.check
+{
+  -ms-transform: scale(1.4); /* IE */
+  -moz-transform: scale(1.4); /* FF */
+  -webkit-transform: scale(1.4); /* Safari and Chrome */
+  -o-transform: scale(1.4); /* Opera */
+  transform: scale(1.4) translate(0%,-10%);
+}
+
+.tab-recap
+{
+  margin-right: 5%;
+  padding-bottom: 5%;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button
+{
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number]
+{
+  -moz-appearance: textfield;
+}

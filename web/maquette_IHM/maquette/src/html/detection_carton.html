@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ldiv">
+  <head>
+    <meta charset="utf-8" />
+    <title>Maquette</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body class="w3-center">
+    <div class="w3-container w3-brown">
+          <!-- Sidebar -->
+      <div class="w3-sidebar w3-bar-block" style="display:none" id="mySidebar">
+        <button onclick="w3_close()" class="w3-bar-item w3-button w3-brown">Fermer &times;</button>
+        <a href="#" class="w3-bar-item w3-button w3-brown">Mes devis</a>
+        <a href="#" class="w3-bar-item w3-button w3-brown">Créer un devis</a>
+        <!-- <a href="#" class="w3-bar-item w3-button w3-brown">Link 3</a> -->
+      </div>
+
+      <div class="w3-left w3-margin-top menu">
+        <button onclick="w3_open()">☰</button>
+      </div>
+
+      <h3>Création de devis</h3>
+    </div>
+
+    <h4 class="w3-border-top w3-margin-bottom">Detection de carton</h4>
+
+    <img src="etagere-kallax-ikea.jpg" alt="meuble" />
+
+    <textarea name="" rows="8" cols="80" placeholder="Description"></textarea>
+
+    <div class="w3-panel">
+      <a class="w3-button w3-brown" href="#">Valider</a>
+    </div>
+
+    <script>
+    function w3_open() {
+      document.getElementById("mySidebar").style.width = "100%";
+      document.getElementById("mySidebar").style.display = "block";
+    }
+
+    function w3_close() {
+      document.getElementById("mySidebar").style.display = "none";
+    }
+  </script>
+  </body>
+</html>

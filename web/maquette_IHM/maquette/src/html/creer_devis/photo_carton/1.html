@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ldiv">
+  <head>
+    <meta charset="utf-8" />
+    <title>Maquette</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-highway.css" />
+    <link rel="stylesheet" type="text/css" href="../../../css/style.css" />
+    <script type="text/javascript" src="../../../js/script.js"></script>
+  </head>
+
+  <body>
+    <div id="menu" class="w3-sidebar w3-bar-block w3-collapse w3-card w3-animate-left">
+      <button class="w3-bar-item w3-button w3-hide-large" onclick="fermer_menu()">Fermer &times;</button>
+      <a href="#" class="w3-bar-item w3-button">Mes devis</a>
+      <a href="#" class="w3-bar-item w3-button">Créer un devis</a>
+    </div>
+
+    <div class="w3-main w3-center">
+      <div class="w3-display-container w3-highway-red">
+        <div class="w3-display-left">
+          <button class="w3-button w3-highway-red w3-hide-large" onclick="ouvrir_menu()">&#9776;</button>
+        </div>
+        <div class="w3-display-middle">
+          <h1>Créer un devis</h1>
+        </div>
+      </div>
+
+      <h2 class="w3-topbar w3-margin-bottom">Ajouter un carton à partir d'une photo</h2>
+
+      <img class="w3-margin-bottom" src="../../../../img/etagere-kallax-ikea.jpg" alt="meuble" />
+
+      <h4>Carton de petite taille</h4>
+
+      <textarea name="" rows="4" cols="40" placeholder="Description">Ce meuble aura besoin d'être démonté.</textarea>
+
+      <div class="w3-panel">
+        <a class="w3-button w3-round-large w3-highway-red bouton" href="../liste_cartons/3.html">Valider</a>
+      </div>
+    </div>
+  </body>
+</html>
