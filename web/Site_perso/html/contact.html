@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8">
+			<link rel="stylesheet" href="../css/contact.css" />
+			<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+			<link href="https://fonts.googleapis.com/css?family=Rubik:400" rel="stylesheet">
+			<title>Marie_Pellier</title>
+	</head>
+	<body>
+		<nav>
+			<ul class="primary">
+				<li>
+					<div class="pas_actuel">
+						<a href="../index.html">
+							ACCUEIL
+						</a>
+					</div>
+				</li>
+				<li>
+					<div class="pas_actuel">
+						<a href="apropos.html">
+							A PROPOS
+						</a>
+					</div>
+					<ul class="sub">	
+						<li>
+							<a href="quisuisje.html">
+								Qui suis-je
+							</a>
+						</li>
+						<li>
+							<a href="cv.html">
+								CV
+							</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<div class="pas_actuel">
+						<a href="projets.html">
+							PROJETS
+						</a>
+					</div>
+					<ul class="sub2">
+						<li>
+							<a href="developpement.html">
+								Développement
+							</a>
+						</li>
+						<li>
+							<a href="graphisme.html">
+								Graphisme
+							</a>
+						</li>
+					</ul>  
+				</li>
+				<li>
+					<div class="actuel">
+						<a  href="contact.html">
+							CONTACT
+						</a>
+					</div>
+				</li>
+			</ul>
+		</nav>
+
+		<div class="social">	
+			<a href="mailto:marie.pellier@etu.u-pec.fr">
+				<img src="../image/mail.png" alt="icone mail">
+			</a>		
+		</div>
+		<div class="social2">	
+			<a href="https://www.linkedin.com/in/marie-pellier-485089142/">
+				<img src="../image/linkedin.png" alt="icone linkedin">
+			</a>		
+		</div>
+
+		<div id="contener">
+			<div class="corps">
+				<form action="envoi.php" method="POST">
+					<div>
+						<label for="nom">Téléphone :</label>
+						<p>06 52 93 99 01</p>
+					</div>
+					<div>
+						<label for="courriel">Adresse mail :</label><br><br>
+						<a href="mailto:marie.pellier@hotmail.com">marie.pellier@hotmail.com</a>
+					</div>
+				</form>
+			
+			</div>
+					
+			<div class="footer">
+				<ul>
+					<li>
+						<p>Mentions légales : Pellier Marie </p>
+					</li>
+				</ul>
+				<ul>
+					<li>
+						<p>le lundi 14 janvier 2019</p>
+					</li>
+				</ul>
+				<ul>
+					<li>	
+						<a href="http://www.iutsf.u-pec.fr/accueil-fr/accueil-iut-senart-fontainebleau-805692.kjsp">
+							<img src="../image/logo_iut.png" alt="logo upec">
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<div id="scrollUp">
+			<a href="#top"><img src="../image/to_top.png" alt="flèche vers le haut"/></a>
+		</div>
+		<script>
+			/* fonction va placer l'icône du haut à une position visible par rapport à la gauche à partir d'une
+			certaine haute de déplacement, et au clic sur l'icône va remonter la page jusqu'en haut. Autrement l'icône
+			n'est pas visible */
+			jQuery(function(){
+				$(function () {
+					$(window).scroll(function () {
+						if ($(this).scrollTop() > 60 ) { 
+							$('#scrollUp').css('left','2%');
+						}else { 
+							$('#scrollUp').removeAttr( 'style' );
+						}
+					});
+				});
+			});
+		</script>
+	</body>
+</html>

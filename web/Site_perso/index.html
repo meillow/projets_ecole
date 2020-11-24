@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+			<meta charset="UTF-8">
+			<link rel="stylesheet" href="css/index.css" />
+			<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js">
+			</script>
+			<link href="https://fonts.googleapis.com/css?family=Rubik:400" rel="stylesheet">
+			<title>Un menu !</title>
+		</head>
+	<body>
+		<nav>
+			<ul class="primary">
+				<li>
+					<div class="actuel">
+						<a href="index.html">
+							ACCUEIL
+						</a>
+					</div>
+				</li>
+				<li>
+					<div class="pas_actuel">
+						<a href="html/apropos.html">
+							A PROPOS
+						</a>
+					</div>
+					<ul class="sub">
+						<li>
+							<a href="html/quisuisje.html">
+								Qui suis-je
+							</a>
+						</li>
+						<li>
+							<a href="html/cv.html">
+								CV
+							</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<div class="pas_actuel">
+						<a href="html/projets.html">
+							PROJETS
+						</a>
+					</div>
+					<ul class="sub2">
+						<li>
+							<a href="html/developpement.html">
+								Développement
+							</a>
+						</li>
+						<li>
+							<a href="html/graphisme.html">
+								Graphisme
+							</a>
+						</li>
+					</ul>  
+				</li>
+				<li>
+					<div class="pas_actuel">
+						<a  href="html/contact.html">
+							CONTACT
+						</a>
+					</div>
+				</li>
+			</ul>
+		</nav>
+					
+		<div class="social">	
+				<a href="mailto:marie.pellier@etu.u-pec.fr">
+					<img src="image/mail.png" alt="icone mail">
+				</a>		
+		</div>
+		<div class="social2">	
+				<a href="https://www.linkedin.com/in/marie-pellier-485089142/">
+					<img src="image/linkedin.png" alt="icone linkedin">
+				</a>		
+		</div>
+		<div id="contener">
+			<div class="corps">	
+				<div id="photoprofil">
+					<img src="image/profil.png" alt="photo de profil">
+					<h1>Bienvenue sur mon site ! </h1>
+					<p>
+						Je m'appelle <b>Marie Pellier</b>,
+					</p>
+					<p>
+						Je suis <b> étudiante en informatique</b> à l'iut de Fontainebleau.
+						Sur ce site vous pourrez en apprendre plus sur moi, mon <b>parcours</b>, mes 
+						<b>travaux</b> effectués lors de mes études...
+					</p>
+					<p>Et bien plus encore !</p> 
+				</div>
+				<div id="boutonqui">
+					<a href="html/quisuisje.html"
+					onMouseOver="Bouton.src = Second.src"
+					onMouseOut="Bouton.src = Premier.src">
+						<img src="image/plus.png" id="Bouton" alt="en savoir plus">
+					</a>
+				</div>
+			</div>	
+				
+			<div class="footer">
+				<ul>
+					<li>
+						<p>Mentions légales : Pellier Marie </p>
+					</li>
+				</ul>
+				<ul>
+					<li>
+						<p>le lundi 14 janvier 2019</p>
+					</li>
+				</ul>
+				<ul>
+					<li>	
+						<a href="http://www.iutsf.u-pec.fr/accueil-fr/accueil-iut-senart-fontainebleau-805692.kjsp">
+							<img src="image/logo_iut.png" alt="logo upec">
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<div id="scrollUp">
+			<a href="#top"><img src="image/to_top.png" alt="flèche vers le haut"/></a>
+		</div>
+
+	<script> /* fonction qui charge dans deux variables des images différentes, elle seront chargé en fonction de si
+	la souris sera au dessus ou non de l'image servant de bouton */
+		Premier = new Image;
+		Premier.src = "image/plus.png";
+		Second = new Image;
+		Second.src = "image/plus2.png";
+		
+	</script>
+	<script>
+		/* fonction va placer l'icône du haut à une position visible par rapport à la gauche à partir d'une
+		certaine haute de déplacement, et au clic sur l'icône va remonter la page jusqu'en haut. Autrement l'icône
+		n'est pas visible */
+		jQuery(function(){
+			$(function () {
+				$(window).scroll(function () {
+					if ($(this).scrollTop() > 60 ) { 
+						$('#scrollUp').css('left','2%');
+					}else { 
+						$('#scrollUp').removeAttr( 'style' );
+					}
+				});
+			});
+		});
+	</script>
+	</body>
+</html>

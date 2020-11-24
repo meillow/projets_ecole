@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8">
+			<link rel="stylesheet" href="../css/thesee.css" />
+			<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+			<link href="https://fonts.googleapis.com/css?family=Rubik:400" rel="stylesheet">
+			<title>Marie_Pellier</title>
+	</head>
+	<body>
+		<nav>
+			<ul class="primary">
+				<li>
+					<div class="pas_actuel">
+						<a href="../index.html">
+							ACCUEIL
+						</a>
+					</div>
+				</li>
+				<li>
+					<div class="pas_actuel">
+						<a href="apropos.html">
+							A PROPOS
+						</a>
+					</div>
+					<ul class="sub">	
+						<li>
+							<a href="quisuisje.html">
+								Qui suis-je
+							</a>
+						</li>
+						<li>
+							<a href="cv.html">
+								CV
+							</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<div class="actuel">
+						<a href="projets.html">
+							PROJETS
+						</a>
+					</div>
+					<ul class="sub2">
+						<li>
+							<a href="developpement.html">
+								Développement
+							</a>
+						</li>
+						<li>
+							<a href="graphisme.html">
+								Graphisme
+							</a>
+						</li>
+					</ul>  
+				</li>
+				<li>
+					<div class="pas_actuel">
+						<a  href="contact.html">
+							CONTACT
+						</a>
+					</div>
+				</li>
+			</ul>
+		</nav>
+
+		<div class="social">	
+			<a href="mailto:marie.pellier@etu.u-pec.fr">
+				<img src="../image/mail.png" alt="icone mail">
+			</a>		
+		</div>
+		<div class="social2">	
+			<a href="https://www.linkedin.com/in/marie-pellier-485089142/">
+				<img src="../image/linkedin.png" alt="icone linkedin">
+			</a>		
+		</div>
+
+		<div id="contener">
+			<div class="corps">	
+				<h1>Thésée et le minotaure</h1>
+				<div class="text1">
+				
+				<p>En 2019, on nous a demandé de réaliser un <b>programme de simulations</b>; 
+					il doit simuler 
+					<a href="https://fr.vikidia.org/wiki/Th%C3%A9s%C3%A9e_et_le_Minotaure">
+						légende de Thésée et le minotaure
+					</a> 
+					à l'aide du <b>Java</b>.
+					
+				</p>
+				<p> Pour ce faire, on devait <b>modéliser le labyrinthe à l'aide d'un tableau </b>avec des cases vides
+					(qui répresentent les chemins possibles), des cases pleines (qui représentent les murs).
+					Une case doit être pour Thésée et une autre pour la sortie du labyrinthe.
+					<b>Thésée doit sortir du labyrinthe</b>... Sauf que <b>ce n'est pas l'utilisateur qui le déplace</b> ! 
+				</p>
+				<p>
+					En effet, on devait créer <b>deux algorithmes qui font avancer Thésée de manières différentes</b> vers la sortie.
+					L'utilisateur peut <b>choisir la configuration du plateau</b> (taille, disposition des cases...), 
+					<b>choisir l'algorithme de fonctionnement, charger/sauvergarder les simulations</b>.
+				</p>
+				</div>
+				<p>
+					Voici quelques images du programme : 
+				</p>
+
+				<ul id="slides">
+		        	<li class="slide showing">
+						<img src="../image/Thesee.png" alt="photo thesee 1">
+					</li>
+		            <li class="slide"> 
+						<img src="../image/thesee1.png" alt="photo thesee 2">
+					</li>
+		            <li class="slide"> 
+						<img src="../image/thesee3.png" alt="photo thesee 3">
+					</li>
+					<li class="slide"> 
+						<img src="../image/thesee4.png" alt="photo thesee 4">
+					</li>
+					<li class="slide"> 
+						<img src="../image/thesee2.png" alt="photo thesee 5">
+					</li>
+				</ul>						  		  
+
+				<img id="previous" src="../image/to_previous.png" alt="image prev"
+				onMouseOver="previous.src = previous2.src" onMouseOut="previous.src = previous1.src"/>
+				<img id="next" src="../image/to_next.png" alt="image next"
+				onMouseOver="next.src = next2.src" onMouseOut="next.src = next1.src"/>
+				<div id="pause" >
+					<img src="../image/pause.png" id="Bouton_pause" alt="image pause"
+					onMouseOver="Bouton_pause.src = pause2.src" onMouseOut="Bouton_pause.src = pause.src"/>
+				</div>		
+				<p>Si vous souhaitez plus de détails, je vous met à disposition le <b> rapport du projet</b> ainsi que <b> le code source :</b></p>
+				<div id="boutonpdf">
+					<a href="../image/thesee.pdf"
+					onMouseOver="Bouton.src = Second.src"
+					onMouseOut="Bouton.src = Premier.src">
+						<img src="../image/pdf1.png" id="Bouton" alt="bouton pdf">
+					</a>
+					<a href="https://drive.google.com/drive/folders/1YjEkwLaiQmj3qbrht4CQDWqDbDC9O8fu?usp=sharing"
+					onMouseOver="Bouton2.src = bouton_code2.src"
+					onMouseOut="Bouton2.src = bouton_code.src">
+						<img src="../image/bouton_proj2.png" id="Bouton2" alt="bouton proj">
+					</a>
+				</div>	 	  		  
+			</div>	
+			<div class="footer">
+				<ul>
+					<li>
+						<p>Mentions légales : Pellier Marie </p>
+					</li>
+				</ul>
+				<ul>
+					<li>
+						<p>le lundi 14 janvier 2019</p>
+					</li>
+				</ul>
+				<ul>
+					<li>	
+						<a href="http://www.iutsf.u-pec.fr/accueil-fr/accueil-iut-senart-fontainebleau-805692.kjsp">
+							<img src="../image/logo_iut.png" alt="logo upec">
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<div id="scrollUp">
+			<a href="#top"><img src="../image/to_top.png" alt="flèche vers le haut"/></a>
+		</div>
+		<script>
+			
+			/* va avancer dans la liste d'image pour les faire défiler en les alignant */
+			var controls = document.querySelectorAll('.controls');
+			for(var i=0; i<controls.length; i++){
+				controls[i].style.display = 'inline-block';
+			} 
+
+			var slides = document.querySelectorAll('#slides .slide');
+			var currentSlide = 0;
+			var slideInterval = setInterval(nextSlide,2000);
+
+			/*passer à la slide suivante*/
+			function nextSlide(){
+				goToSlide(currentSlide+1);
+			}
+			/*passer à la slide précèdente*/
+			function previousSlide(){
+				goToSlide(currentSlide-1);
+			}
+			/*va charger la slide choisie actuelle */
+			function goToSlide(n){
+				slides[currentSlide].className = 'slide';
+				currentSlide = (n+slides.length)%slides.length;
+				slides[currentSlide].className = 'slide showing';
+			}
+
+
+			var playing = true;
+			var pauseButton = document.getElementById('pause');
+			pause = new Image;
+			pause.src = "../image/pause.png";
+			pause2 = new Image;
+			pause2.src = "../image/pause2.png";
+
+			/* met en pause le défilement si click sur le bouton pause et change l'image du bouton pause pour montrer
+			qu'il est activé*/
+			function pauseSlideshow(){
+				pauseButton.innerHTML = '<img src=\"../image/pause2.png">';
+				playing = false;
+				clearInterval(slideInterval);
+			}
+
+			/* relance le défilement si bouton pause activé et si click sur le bouton pause et change l'image de l'icone pause pour montrer
+			qu'il est désactivé*/
+			function playSlideshow(){
+
+				pauseButton.innerHTML = '<img src=\"../image/pause.png">';
+				playing = true;
+				slideInterval = setInterval(nextSlide,2000);
+			}
+
+			/*si le bouton pause à été cliqué est déjà activé, alors va mettre en pause sinon va remettre le défilement */
+			pauseButton.onclick = function(){
+				
+				if(playing){ 
+				pauseSlideshow(); }
+				else{ 
+				playSlideshow(); }
+			};
+
+			var next = document.getElementById('next');
+			var previous = document.getElementById('previous');
+
+			/* si appuie sur le bouton next alors va changer de slide et va mettre sur pause le défilement automatique */
+			next.onclick = function(){
+				pauseSlideshow();
+				nextSlide();
+			};
+			/* si appuie sur le bouton previous alors va revenir sur la slide précèdente et va mettre sur pause le défilement automatique */
+			previous.onclick = function(){
+				pauseSlideshow();
+				previousSlide();
+			};
+			
+			/* fonction qui charge dans deux variables des images différentes, elle seront chargé en fonction de si
+			la souris sera au dessus ou non des images servant de bouton (pause, next, bouton de téléchargement de pdf...) */	
+			Premier = new Image;
+			Premier.src = "../image/pdf1.png";
+			Second = new Image;
+			Second.src = "../image/pdf2.png";
+			bouton_code = new Image;
+			bouton_code.src = "../image/bouton_proj2.png";
+			bouton_code2 = new Image;
+			bouton_code2.src = "../image/bouton_proj.png";
+
+			previous1 = new Image;
+			previous1.src = "../image/to_previous.png";
+			previous2 = new Image;
+			previous2.src = "../image/to_previous2.png";
+			next1 = new Image;
+			next1.src = "../image/to_next.png";
+			next2 = new Image;
+			next2.src = "../image/to_next2.png";
+		</script>
+		<script>
+			/* fonction va placer l'icône du haut à une position visible par rapport à la gauche à partir d'une
+			certaine haute de déplacement, et au clic sur l'icône va remonter la page jusqu'en haut. Autrement l'icône
+			n'est pas visible */
+			jQuery(function(){
+				$(function () {
+					$(window).scroll(function () {
+						if ($(this).scrollTop() > 60 ) { 
+							$('#scrollUp').css('left','2%');
+						}else { 
+							$('#scrollUp').removeAttr( 'style' );
+						}
+					});
+				});
+			});
+		</script>
+	</body>
+</html>

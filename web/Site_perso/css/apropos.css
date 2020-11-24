@@ -1,0 +1,418 @@
+
+/* MENU */
+.primary a {
+  text-decoration: none;
+  display: block;
+  font-family : 'Arial', sans-serif;
+  font-size: 18px;
+  font-weight:bolder;
+  text-shadow: 1px 1px 5px #343434;
+  text-align: left;
+}
+
+.primary ul {
+  list-style: none;
+  position: relative;
+}
+
+.primary li {
+  float: left;
+  list-style-type: none;    
+}
+
+nav {
+  display:inline-flex;
+  justify-content:center;
+  position: fixed;
+  width: 100%;
+  left:0%;
+  top:0%;
+  background-color:rgba(0, 0, 0, 0.8);
+  z-index: 5;
+}
+
+/*menu principal*/
+.actuel a {
+  position: relative;
+  color : #f5cc0e;
+  z-index: 5;
+}
+
+.pas_actuel a{
+  position:relative;
+  z-index: 5;
+  color: white;
+}
+
+ul.primary li a {
+  display: block;
+  padding: 20px 50px;
+}
+
+/*sous menu*/
+ul.sub {
+  position: absolute;
+  width: 155px;
+  display:none;
+  z-index: 1;
+}
+
+ul.sub li {
+  float: none;
+}
+
+ul.sub li a {
+  color: #000;
+  margin-left: -40px;
+  margin-top: 10px;
+  justify-content:center;
+}
+
+ul.sub2 {
+  position: absolute;
+  width: 144px;
+  display:none;
+}
+
+ul.sub2 li {
+  float: none;
+}
+
+ul.sub2 li a {
+  padding-left:50px;
+  margin-left: -60px;
+  margin-top: 2px;
+  justify-content:left;
+}
+
+/* le hover des sous menu*/
+ul.sub li a:hover {
+  color: #f5cc0e;
+}
+
+ul.sub2 li a:hover {
+  color: #f5cc0e;
+}
+
+/*sous menu*/
+ul.primary li:hover ul {
+  display: block;
+  background-color:rgba(0, 0, 0, 0.8);
+  padding-top: 100px;
+  margin-top:-100px;
+}
+
+ul.primary li:hover a {
+  color: #fff;
+}
+ul.primary div.pas_actuel:hover a {
+  color: #f5cc0e;
+}
+
+ul.primary li:hover > a{
+  color: #f5cc0e;
+} 
+#premier:hover {
+  color: #f5cc0e;
+} 
+
+/* CORPUS */
+html {
+  background-image: url(../image/accueil2.jpg);
+  background-attachment:fixed;
+  background-repeat:no-repeat;
+  background-position:50% 40%;
+  height:100%;
+}
+
+body{
+  height:60%;
+  position: relative;
+}
+
+#contener{
+  min-height:100%;
+  position: relative;
+  padding-bottom: 10%;
+}
+
+.corps  {
+  position: relative;
+  margin-top: 12%;
+  margin-left:10%;
+  margin-right:10%;
+  padding-bottom: 2%;
+  background-color:rgba(255, 255, 255, 0.7);
+  z-index: 1;
+}
+
+.corps a{
+  color:#f5cc0e;
+  text-decoration: none;
+}
+
+.corps h1{
+  line-height: 35px;
+  font-family :'Rubik', cursive;;
+  color: black;
+  text-decoration:none;
+  text-align: center;
+  letter-spacing: 0.1em;
+  font-size: 120%;
+  padding:2%;
+}
+
+.corps p{
+  line-height: 30px;
+  font-family :'Rubik', cursive;
+  color: black;
+  text-decoration:none;
+  text-align: center;
+  letter-spacing: 0.1em;
+  font-size: 105%;
+  padding:2%;
+}
+.text1 p {
+  text-align: justify;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+#boutonprojets a{
+  margin:9% ;
+  position: relative;
+  left: 19%;
+}
+
+#boutonprojets img{
+  width: 12%;
+}
+
+/* PIED DE PAGE */
+.footer {
+  width: 100%;;
+  position: absolute;
+  bottom: -20%;
+  z-index: 2;
+  background-color:rgba(0, 0, 0, 0.8);
+  margin-left:-8px;
+  padding-right:15px;
+}
+
+.footer p{
+  font-family : 'Gill Sans', sans-serif;
+  font-size: 12px;
+  font-weight:normal;
+  margin-right: 10px;;
+  color :white;
+  letter-spacing: 0.1em;
+}
+
+.footer li {
+  position: relative;
+  margin-left:8%;
+  left : 15%;
+  list-style-type: none;
+  margin-top:1em;
+  float: left;
+  padding-bottom: 0.2em;
+}
+
+.footer ul {
+  list-style: none;
+  position: relative;
+}
+
+
+.footer a img {
+  padding-left: 30%;
+  padding-bottom:2%;
+  height:100%;
+}
+
+
+/* AUTRE */
+#scrollUp {
+  position: fixed;
+  top : 80%;
+  left:  -9000px;
+  opacity: 1;
+
+}
+
+.social a {
+  position: fixed;
+  top: 20%;
+  left: 2%; 
+  z-index: 3;
+}
+
+.social2 a {
+  position: fixed;
+  top: 28%;
+  left: 2%; 
+  padding-left: 10px;;
+  z-index: 3;
+}
+
+
+
+/* MODE TABLETTE */
+@media only screen and (max-width: 1024px) {
+   .primary a {
+    font-size: 15px;
+  }
+
+  .corps  {
+    padding-bottom: 9%;
+    margin-top: 26%;
+  }
+
+  .corps h1{
+    line-height: 35px;
+    padding-left:11%;
+    margin-right:11%;
+    font-size: 115%;
+    padding-top: 10%;
+  }
+  
+  .corps p{
+    line-height: 40px;
+    padding-right: 15%;
+    padding-left:15%;
+    padding-top: 5%;
+  }
+  
+  .footer {
+    bottom: -29%;
+  }
+  .footer li {
+    margin-left:-7%;
+    margin-right:16%;
+    font-size: 5px;
+  }
+  .footer p {
+    font-size: 9px;
+  } 
+
+  .footer img {
+    width: 68%;
+  }
+  
+  .social {
+
+  }
+  .social a {
+    left: 1em; 
+  }
+  .social2 a {
+    left: 1em; 
+  }
+  
+  #boutonprojets a{
+    left: 5%;
+  }
+
+  #boutonprojets img{
+    width: 28%;
+  }
+
+   #boutonprojets {
+    padding-top: 5%;
+   }
+}
+/* MODE SMARPHONE */
+@media only screen and (max-width: 420px) {
+  .primary a {
+    font-size: 0.75em;
+  }
+
+  .corps  {
+    margin-top: 65%;
+    padding-bottom: 8%;
+  }
+
+  .footer p{
+    font-size: 10px;
+    margin-right: 0px;
+    margin-bottom: 6%;
+    margin-top: 0%;
+  }
+  
+  .footer li {
+    margin-left:20%;
+    left : 0%;
+    line-height: 5px;
+  }
+  
+  .footer a img {
+    width:55%;
+    margin-bottom: 9%;
+    margin-top: 3%;
+    float:right;
+  }
+
+  .social a {
+    left: 0.2em; 
+  }
+  .social2 a {
+    left: 0.2em; 
+  }
+
+  .social a{
+    top : 9.9em;
+  }
+  .social2 a{
+    top : 12.9em;
+  }
+
+  .social img {
+    width: 70%;
+  }
+
+  .social2 img {
+    width: 70%;
+  }
+
+  #scrollUp {
+    top : 75%;
+  }
+
+  #scrollUp img {
+    width: 88%;
+  }
+
+  .corps h1{
+    line-height: 30px;
+    padding-bottom: 13%;
+    font-size: 110%;
+  }
+  .corps p{
+    line-height: 30px;
+    padding-bottom: 10%;
+    padding-right: 9%;
+    padding-left: 9%;
+    font-size: 95%;
+  }
+
+  #boutonprojets a{
+    margin-left: 0%;
+    padding-left: 0%;
+    line-height: 7em;
+    padding-right: 0%;
+    margin-right: 0%;
+  }
+  .bpdf{
+    margin-right: 5%;
+  }
+
+  #boutonprojets {
+    margin-top: -1em;
+    margin-left: 3.5em;
+  }
+
+  #boutonprojets img{
+    width:9em;
+  }
+
+}

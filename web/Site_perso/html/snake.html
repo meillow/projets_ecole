@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8">
+			<link rel="stylesheet" href="../css/snake.css" />
+			<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+			<link href="https://fonts.googleapis.com/css?family=Rubik:400" rel="stylesheet">
+			<title>Marie_Pellier</title>
+	</head>
+	<body>
+		<nav>
+			<ul class="primary">
+				<li>
+					<div class="pas_actuel">
+						<a href="../index.html">
+							ACCUEIL
+						</a>
+					</div>
+				</li>
+				<li>
+					<div class="pas_actuel">
+						<a href="apropos.html">
+							A PROPOS
+						</a>
+					</div>
+					<ul class="sub">	
+						<li>
+							<a href="quisuisje.html">
+								Qui suis-je
+							</a>
+						</li>
+						<li>
+							<a href="cv.html">
+								CV
+							</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<div class="actuel">
+						<a href="projets.html">
+							PROJETS
+						</a>
+					</div>
+					<ul class="sub2">
+						<li>
+							<a href="developpement.html">
+								Développement
+							</a>
+						</li>
+						<li>
+							<a href="graphisme.html">
+								Graphisme
+							</a>
+						</li>
+					</ul>  
+				</li>
+				<li>
+					<div class="pas_actuel">
+						<a  href="contact.html">
+							CONTACT
+						</a>
+					</div>
+				</li>
+			</ul>
+		</nav>
+
+		<div class="social">	
+			<a href="mailto:marie.pellier@etu.u-pec.fr">
+				<img src="../image/mail.png" alt="icone mail">
+			</a>		
+		</div>
+		<div class="social2">	
+			<a href="https://www.linkedin.com/in/marie-pellier-485089142/">
+				<img src="../image/linkedin.png" alt="icone linkedin">
+			</a>		
+		</div>
+
+		<div id="contener">
+			<div class="corps">	
+					<h1>Le Snake</h1>
+					<div class="text1">
+						<p>En 2019, on nous a demandé de <b>réaliser le jeux du Snake en C</b>. 
+							Le jeu du Snake consiste à <b>déplacer un serpent</b> d'une certaine longueur (ici 10 cases),.
+							<b>sur un terrain </b>d'une certaine taille (ici 40x40), afin qu'il<b> mange toutes les pommes
+							présentes sur le terrain</b>. A chaque fois qu'il mange une pomme il grandit de deux cases.
+							Mais il ne doit surtout <b>pas se cogner dans les murs ou se manger lui même !! </b>
+						</p>
+						<p>
+							Pour ce projet il nous était demandé d'incorporer <b>un timer</b> ainsi qu'un <b>système de points</b>.
+							On devait aussi incorporer une difficulté supplémentaire ; Nous avons choisi de <b>générer
+							de manière aléatoire des obstacles</b> qui peuvent ou non se déplacer sur le terrain.
+						</p>
+						<p>Pour les projets en C, il nous est demandé d'<b>utiliser la bibliothèque graphique de l'iut</b>,
+							ce qui implique une difficulté supplémentaire puisque cette <b> bibliothèque est limitée</b>. 
+						</p>
+					</div>
+					<p>
+						Voici quelques images du jeu : 
+					</p>
+	
+	
+					<ul id="slides">
+						<li class="slide showing">
+							<img src="../image/snake.png" alt="photo snake 1">
+						</li>
+						<li class="slide"> 
+							<img src="../image/snake1.png" alt="photo snake 2">
+						</li>
+						<li class="slide"> 
+							<img src="../image/snake2.png" alt="photo snake 3">
+						</li>
+						<li class="slide"> 
+							<img src="../image/snake3.png" alt="photo snake 4">
+						</li>
+					</ul>						  		  
+					
+					<img id="previous" src="../image/to_previous.png" alt="image prev"
+					onMouseOver="previous.src = previous2.src" onMouseOut="previous.src = previous1.src"/>
+					<img id="next" src="../image/to_next.png" alt="image next"
+					onMouseOver="next.src = next2.src" onMouseOut="next.src = next1.src"/>
+					<div id="pause" >
+						<img src="../image/pause.png" id="Bouton_pause" alt="image pause"
+						onMouseOver="Bouton_pause.src = pause2.src" onMouseOut="Bouton_pause.src = pause.src"/>
+					</div>		
+						
+					<p>Si vous souhaitez plus de détails, je vous met à disposition le <b>rapport du projet</b> ainsi que <b> le code source :</b></p>
+					<div id="boutonpdf">
+						<a href="../image/snake.pdf"
+						onMouseOver="Bouton.src = Second.src"
+						onMouseOut="Bouton.src = Premier.src">
+							<img src="../image/pdf1.png" id="Bouton" alt="bouton pdf">
+						</a>
+						<a href="https://drive.google.com/drive/folders/16Y0aE9C4Ap1QHxgaI6i0T44ichFGBOYQ?usp=sharing"
+						onMouseOver="Bouton2.src = bouton_code2.src"
+						onMouseOut="Bouton2.src = bouton_code.src">
+							<img src="../image/bouton_proj2.png" id="Bouton2" alt="bouton proj">
+						</a>
+					</div>	  		  	  
+			</div>	
+		
+			<div class="footer">
+				<ul>
+					<li>
+						<p>Mentions légales : Pellier Marie </p>
+					</li>
+				</ul>
+				<ul>
+					<li>
+						<p>le lundi 14 janvier 2019</p>
+					</li>
+				</ul>
+				<ul>
+					<li>	
+						<a href="http://www.iutsf.u-pec.fr/accueil-fr/accueil-iut-senart-fontainebleau-805692.kjsp">
+							<img src="../image/logo_iut.png" alt="logo upec">
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<div id="scrollUp">
+			<a href="#top"><img src="../image/to_top.png" alt="flèche vers le haut"/></a>
+		</div>
+		<script>
+			
+			/* va avancer dans la liste d'image pour les faire défiler en les alignant */
+			var controls = document.querySelectorAll('.controls');
+			for(var i=0; i<controls.length; i++){
+				controls[i].style.display = 'inline-block';
+			} 
+
+			var slides = document.querySelectorAll('#slides .slide');
+			var currentSlide = 0;
+			var slideInterval = setInterval(nextSlide,2000);
+
+			/*passer à la slide suivante*/
+			function nextSlide(){
+				goToSlide(currentSlide+1);
+			}
+			/*passer à la slide précèdente*/
+			function previousSlide(){
+				goToSlide(currentSlide-1);
+			}
+			/*va charger la slide choisie actuelle */
+			function goToSlide(n){
+				slides[currentSlide].className = 'slide';
+				currentSlide = (n+slides.length)%slides.length;
+				slides[currentSlide].className = 'slide showing';
+			}
+
+
+			var playing = true;
+			var pauseButton = document.getElementById('pause');
+			pause = new Image;
+			pause.src = "../image/pause.png";
+			pause2 = new Image;
+			pause2.src = "../image/pause2.png";
+
+			/* met en pause le défilement si click sur le bouton pause et change l'image du bouton pause pour montrer
+			qu'il est activé*/
+			function pauseSlideshow(){
+				pauseButton.innerHTML = '<img src=\"../image/pause2.png">';
+				playing = false;
+				clearInterval(slideInterval);
+			}
+
+			/* relance le défilement si bouton pause activé et si click sur le bouton pause et change l'image de l'icone pause pour montrer
+			qu'il est désactivé*/
+			function playSlideshow(){
+
+				pauseButton.innerHTML = '<img src=\"../image/pause.png">';
+				playing = true;
+				slideInterval = setInterval(nextSlide,2000);
+			}
+
+			/*si le bouton pause à été cliqué est déjà activé, alors va mettre en pause sinon va remettre le défilement */
+			pauseButton.onclick = function(){
+				
+				if(playing){ 
+				pauseSlideshow(); }
+				else{ 
+				playSlideshow(); }
+			};
+
+			var next = document.getElementById('next');
+			var previous = document.getElementById('previous');
+
+			/* si appuie sur le bouton next alors va changer de slide et va mettre sur pause le défilement automatique */
+			next.onclick = function(){
+				pauseSlideshow();
+				nextSlide();
+			};
+			/* si appuie sur le bouton previous alors va revenir sur la slide précèdente et va mettre sur pause le défilement automatique */
+			previous.onclick = function(){
+				pauseSlideshow();
+				previousSlide();
+			};
+
+			/* fonction qui charge dans deux variables des images différentes, elle seront chargé en fonction de si
+			la souris sera au dessus ou non des images servant de bouton (pause, next, bouton de téléchargement de pdf...) */	
+			Premier = new Image;
+			Premier.src = "../image/pdf1.png";
+			Second = new Image;
+			Second.src = "../image/pdf2.png";
+			bouton_code = new Image;
+			bouton_code.src = "../image/bouton_proj2.png";
+			bouton_code2 = new Image;
+			bouton_code2.src = "../image/bouton_proj.png";
+			previous1 = new Image;
+			previous1.src = "../image/to_previous.png";
+			previous2 = new Image;
+			previous2.src = "../image/to_previous2.png";
+			next1 = new Image;
+			next1.src = "../image/to_next.png";
+			next2 = new Image;
+			next2.src = "../image/to_next2.png";
+		</script>
+		<script>
+			/* fonction va placer l'icône du haut à une position visible par rapport à la gauche à partir d'une
+			certaine haute de déplacement, et au clic sur l'icône va remonter la page jusqu'en haut. Autrement l'icône
+			n'est pas visible */
+			jQuery(function(){
+				$(function () {
+					$(window).scroll(function () {
+						if ($(this).scrollTop() > 60 ) { 
+							$('#scrollUp').css('left','2%');
+						}else { 
+							$('#scrollUp').removeAttr( 'style' );
+						}
+					});
+				});
+			});
+		</script>
+	</body>
+</html>
